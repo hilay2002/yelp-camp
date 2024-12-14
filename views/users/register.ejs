@@ -1,0 +1,27 @@
+<% layout('layouts/boilerPlate'); %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form action="/register" method="POST" novalidate class="validated-form">
+        <div class="mb-3">
+            <label class="form-label" for="username">Username</label>
+            <input class="form-control" type="text" id="username" name="username" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-control" type="email" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="password">Password</label>
+            <input class="form-control" type="password" id="password" name="password" required>
+        </div>
+        <button class="btn btn-success">submit</button>
+    </form>
+</body>
+</html>
