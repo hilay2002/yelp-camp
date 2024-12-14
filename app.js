@@ -36,9 +36,6 @@ app.use(express.urlencoded({extended: true}));
 app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, 'public')));
 
-
-<<<<<<< HEAD
-=======
 const sessionConfig = {
     secret: 'thisshouldbeabettersecret!',
     resave: false,
@@ -51,7 +48,6 @@ const sessionConfig = {
 }
 app.use(session(sessionConfig));
 app.use(flash());
->>>>>>> 4f9191b6e2e1d1414c19c3e6889a2b6ba514329e
 
 app.use(passport.initialize());
 app.use(passport.session());
